@@ -1,64 +1,118 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Đỗ Quốc Vương</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Vương</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Đỗ Quốc Vương</h1>
-            <ul>
-                <li><a href="#about">Giới thiệu</a></li>
-                <li><a href="#projects">Dự án</a></li>
-                <li><a href="#contact">Liên hệ</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <h2>Xin chào, mình là Đỗ Quốc Vương 👋</h2>
-        <p>Lập trình viên Web | Frontend Developer | Yêu thích công nghệ</p>
-        <a href="#projects" class="btn">Xem dự án</a>
-    </section>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Vương.dev</div>
+      <ul class="nav-links">
+        <li><a href="#home">Trang chủ</a></li>
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#skills">Kỹ năng</a></li>
+        <li><a href="#projects">Dự án</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="about" class="about">
-        <h2>Giới thiệu</h2>
-        <p>
-            Mình là lập trình viên đam mê xây dựng các ứng dụng web đẹp, nhanh và dễ sử dụng.
-            Có kinh nghiệm với HTML, CSS, JavaScript và các framework hiện đại.
-        </p>
-    </section>
+  <section id="home" class="home">
+    <div class="home-inner">
+      <h1>Xin chào, tôi là <span class="highlight">Vương</span></h1>
+      <p>Lập trình viên Web & Ứng dụng Mobile</p>
+    </div>
+  </section>
 
-    <section id="projects" class="projects">
-        <h2>Dự án</h2>
-        <div class="project-list">
-            <div class="project">
-                <h3>Website Portfolio</h3>
-                <p>Trang web giới thiệu cá nhân được xây dựng với HTML và CSS thuần.</p>
-            </div>
-            <div class="project">
-                <h3>Ứng dụng To-Do</h3>
-                <p>Ứng dụng quản lý công việc đơn giản với JavaScript.</p>
-            </div>
-            <div class="project">
-                <h3>Blog cá nhân</h3>
-                <p>Blog chia sẻ kiến thức lập trình, sử dụng Node.js và Express.</p>
-            </div>
-        </div>
-    </section>
+  <section id="about" class="section about">
+    <h2 class="section-title">Giới thiệu</h2>
+    <div class="about-box">
+      <img src="images/avatar.jpg" alt="Avatar Vương" class="avatar-large">
+      <div class="about-text">
+        <p>Xin chào! Tôi là <strong>Vương</strong>, lập trình viên đam mê xây dựng sản phẩm mang lại giá trị.</p>
+        <p>Tôi có kinh nghiệm trong phát triển web & mobile sử dụng Java, PHP, JavaScript, SQL Server, Android Studio,...</p>
+        <p>Tôi hướng tới phong cách làm việc chuyên nghiệp, sáng tạo, liên tục học hỏi và cải tiến để trở thành kỹ sư phần mềm toàn diện.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact" class="contact">
-        <h2>Liên hệ</h2>
-        <p>Email: <a href="mailto:zen@example.com">zen@example.com</a></p>
-        <p>LinkedIn: <a href="#">linkedin.com/in/zen</a></p>
-        <p>GitHub: <a href="#">github.com/zen</a></p>
-    </section>
+  <section id="skills" class="section skills">
+    <h2 class="section-title">Kỹ năng</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fa-brands fa-html5"></i>
+        <h3>HTML5</h3>
+        <p>Xây dựng cấu trúc nội dung web</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-css3-alt"></i>
+        <h3>CSS3</h3>
+        <p>Thiết kế giao diện, responsive layout</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-js"></i>
+        <h3>JavaScript</h3>
+        <p>Giao diện tương tác, DOM manipulation</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-java"></i>
+        <h3>Java</h3>
+        <p>Ứng dụng Java desktop và mobile</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa-solid fa-database"></i>
+        <h3>SQL</h3>
+        <p>Thiết kế và truy vấn cơ sở dữ liệu</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-github"></i>
+        <h3>GitHub</h3>
+        <p>Quản lý phiên bản, làm việc nhóm</p>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2025 Đỗ Quốc Vương. All rights reserved.</p>
-    </footer>
+  <section id="projects" class="section projects">
+    <h2 class="section-title">Dự án tiêu biểu</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="Dự án 1">
+        <h3>Website bán văn phòng phẩm</h3>
+        <p>Trang web có giỏ hàng, đăng nhập, quản lý đơn hàng. Giao diện responsive, kết nối cơ sở dữ liệu MySQL.</p>
+        <a href="#">Xem chi tiết</a>
+      </div>
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="Dự án 2">
+        <h3>Ứng dụng nhận diện chữ viết tay</h3>
+        <p>Android app sử dụng camera để nhận diện chữ viết tay, trích xuất văn bản, lưu kết quả vào SQLite.</p>
+        <a href="#">Xem chi tiết</a>
+      </div>
+      <div class="project-card">
+        <img src="images/project3.jpg" alt="Dự án 3">
+        <h3>Ứng dụng chat MVC Java</h3>
+        <p>Ứng dụng chat client-server với giao diện Java Swing, kết nối SQL Server, hỗ trợ emoji và gửi hình ảnh.</p>
+        <a href="#">Xem chi tiết</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2 class="section-title">Liên hệ</h2>
+    <div class="contact-grid">
+      <a href="mailto:doquocvuongyh@gmail.com"><i class="fa-solid fa-envelope"></i>Email</a>
+      <a href="https://facebook.com/quocvuong46" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook</a>
+      <a href="https://github.com/quocvuong46" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Vương. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
